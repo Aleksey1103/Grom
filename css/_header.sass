@@ -1,0 +1,176 @@
+header	
+	.nav
+		display: grid
+		box-sizing: border-box		
+		grid-template-columns: calc((100vw - 1200px)/2 +  152px) auto calc((100vw - 1200px)/2 + 315px)
+		align-items: center
+		margin-bottom: 29px
+		margin-top: 5px
+		a
+			color: #000002
+			letter-spacing: 1.2px
+		.logo
+			position: relative
+			justify-self: end
+			width: 155px
+			height: 79px
+			&:before
+				content: ""
+				position: absolute
+				width: 3px
+				height: 150%
+				background-color: #000
+				top: 1px
+				left: 29%
+			&__img
+				display: block
+				width: 100%
+				&_wh
+					display: none
+		.menu
+			&__list
+				padding: 0
+				display: flex
+				justify-content: space-around
+				margin: 0
+				.list__item
+					a
+						position: relative
+						&:before
+							display: block
+							position: absolute
+							left: -10%
+							top: -4px
+							width: 0
+							height: 2px
+							background-color: #6170ca
+							content: ""
+							transition: width 0.5s ease-out
+					a:hover:before, a:focus:before
+						width: 120%
+		.contacts
+			position: relative
+			&__list
+				padding: 0
+				padding-left: 37px
+				margin: 0
+				.list__item
+					padding: 13px 0 15px 44px
+					&_mail
+						position: relative
+						&:before
+							content: ""
+							position: absolute
+							background-image: url(../img/message-icon.png)
+							background-repeat: no-repeat
+							width: 31px
+							height: 23px
+							top: 10px
+							left: 0
+					&_phone
+						position: relative
+						&:before
+							content: ""
+							position: absolute
+							background-image: url(../img/telephone-icon.png)
+							background-repeat: no-repeat
+							width: 31px
+							height: 31px
+							top: 6px
+							left: 0
+		.burger-link
+			display: none
+		.nav-burger
+			display: none
+
+.headhesive
+	display: grid	
+	grid-template-columns: calc((100vw - 1200px)/2 + 152px) auto calc((100vw - 1200px)/2 + 315px)
+	align-items: center	
+	margin-bottom: 0
+	margin-top: -5px
+	position: fixed
+	width: 100vw
+	background-color: #000002
+	transform: translateY(-115%)
+	transition: .5s
+	z-index: 999
+	&--stick
+		transform: translateY(0)
+	a
+		color: #fff
+		letter-spacing: 1.2px
+	.burger-link
+		display: none
+	.nav-burger
+		display: none
+	.logo
+		display: flex
+		justify-content: flex-end
+		position: relative
+		&:before
+			display: none
+		&:after
+			display: none
+		&__img
+			width: 100%
+			max-width: 155px
+			position: relative
+			&_wh
+				display: block
+				z-index: 10
+			&_bl
+				display: none
+	.menu
+		&__list
+			padding: 0
+			display: flex
+			justify-content: space-around
+			margin: 0
+			.list__item
+				a
+					position: relative
+					&:before
+						display: block
+						position: absolute
+						left: -10%
+						top: -4px
+						width: 0
+						height: 2px
+						background-color: #6170ca
+						content: ""
+						transition: width 0.5s ease-out
+				a:hover:before, a:focus:before
+					width: 120%
+	.contacts
+		position: relative
+		background-color: #1d1d1d
+		padding-left: 37px
+		&:after
+			display: none
+		&__list
+			padding: 0
+			.list__item
+				padding: 14px 0 14px 47px
+				&_mail
+					position: relative
+					&:before
+						content: ""
+						position: absolute
+						background-image: url(../img/message-icon.png)
+						background-repeat: no-repeat
+						width: 31px
+						height: 23px
+						top: 13px
+						left: 0
+				&_phone
+					position: relative
+					&:before
+						content: ""
+						position: absolute
+						background-image: url(../img/telephone-icon.png)
+						background-repeat: no-repeat
+						width: 31px
+						height: 31px
+						top: 9px
+						left: 0

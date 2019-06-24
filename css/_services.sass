@@ -1,0 +1,81 @@
+.services
+	padding-bottom: 2%
+	padding-top: 2.5%
+	&__img
+		display: block
+		position: absolute
+		z-index: -1
+		background-repeat: no-repeat
+		&-1
+			background-image: url(../img/bg-elem-1.png)
+			height: 209px
+			left: 7%
+			top: 108%
+			width: 123px
+			opacity: 0.2
+		&-2
+			background-image: url(../img/bg-elem-2.png)
+			height: 212px
+			right: -1%
+			top: 120%
+			width: 117px
+	&__block
+		display: grid
+		grid-template-columns: repeat(auto-fill, minmax(482px, 1fr))
+		grid-gap: 63px
+		padding-top: 3%
+		grid-column-gap: 112px
+	.block__item
+		.item
+			font-size: 150%
+			font-weight: 700
+			text-transform: uppercase
+			letter-spacing: 1.8px
+			position: relative
+			padding-left: 17%
+			margin-bottom: 28px
+			&:before
+				position: absolute
+				content: ""
+				display: block
+				background-repeat: no-repeat
+				width: 100%
+				max-width: 72px
+				height: 72px
+				top: -21px
+				left: 0
+				background-size: cover
+			&_one
+				&:before
+					content: ""
+					background-image: url(../img/identity-icon.png)
+			&_two
+				&:before
+					content: ""
+					background-image: url(../img/webdesign-icon.png)
+			&_three
+				&:before
+					content: ""
+					background-image: url(../img/branding-icon.png)
+			&_four
+				&:before
+					content: ""
+					background-image: url(../img/printing-icon.png)
+			&_p
+				display: flex
+				p
+					font-weight: 500
+					text-transform: uppercase
+					letter-spacing: 1.2px
+					position: relative
+					&:not(:last-child):after
+						content: ""
+						width: 18px
+						height: 4px
+						background-color: #dddddd
+						display: block
+						position: absolute
+						right: 17px
+						top: calc(50% - 2px)
+					&:not(:last-child)
+						padding-right: 50px

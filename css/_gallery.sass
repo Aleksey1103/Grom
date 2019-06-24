@@ -1,0 +1,113 @@
+.portfolio
+	position: relative
+	padding-bottom: 3%
+	&__img
+		display: block
+		position: absolute
+		z-index: -1
+		background-repeat: no-repeat
+		&-1
+			background-image: url(../img/bg-elem-12.png)
+			height: 340px
+			left: 0
+			top: 58%
+			width: 232px
+		&-2
+			background-image: url(../img/bg-elem-13.png)
+			height: 210px
+			left: 6%
+			top: 20%
+			width: 122px
+		&-3
+			background-image: url(../img/bg-elem-5.png)
+			height: 221px
+			right: -0.3%
+			top: 76.5%
+			width: 188px
+		&-4
+			background-image: url(../img/bg-elem-8.png)
+			height: 83px
+			right: 3%
+			top: 66%
+			width: 83px
+		&-5
+			background-image: url(../img/bg-elem-3.png)
+			height: 30px
+			right: 3%
+			top: 48.5%
+			width: 130px
+		&-6
+			background-image: url(../img/bg-elem-2.png)
+			background-repeat: no-repeat
+			height: 225px
+			right: -3%
+			top: 25%
+			width: 173px
+	&-block
+		padding-top: 1.5%
+		.filter_div
+			ul
+				display: grid
+				grid-template-columns: repeat(5, 1fr)
+				padding: 0
+				.filter
+					font-weight: 300
+					text-transform: uppercase
+					letter-spacing: 1.2px
+					text-align: center
+					cursor: pointer
+					align-self: center
+				.active
+					font-family: "GothamProMedium"
+					position: relative
+					padding: 13px 0
+					&:before
+						position: absolute
+						content: ''
+						height: 3px
+						width: 100%
+						left: 0
+						bottom: 0
+						z-index: 2
+						background-color: #000
+					&:after
+						position: absolute
+						content: ''
+						height: 3px
+						width: 100%
+						left: 0
+						top: 0
+						z-index: 2
+						background-color: #000
+		#portfolio_grid
+			display: grid
+			grid-template-columns: repeat(3, 1fr)
+			grid-gap: 30px
+			padding: 2.6% 0 4.8% 0
+	&_item
+		perspective: 3000px
+		.square
+			background-color: #fff
+			margin: 0 auto
+			position: relative
+			width: calc((1200px - 60px)/3)
+			height: calc((1200px - 60px)/3)
+			overflow: hidden
+			border-radius: 2px
+			transition: transform 100ms linear, box-shadow 100ms linear
+			transform-style: preserve-3d
+			transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+			box-shadow: 0px 0px 0px rgba(0, 0, 0, 0)
+			&:hover
+				transition: none			
+			img
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%,-50%)				
+				width: 100%
+				height: 100%
+				object-fit: cover
+				transition: all .7s ease-out
+				&:hover
+					transform: translate(-50%,-50%) scale(1.1)	

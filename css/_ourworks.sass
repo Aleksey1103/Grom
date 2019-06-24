@@ -1,0 +1,71 @@
+header
+    .nav
+        &_ourWorks
+            margin-bottom: 18px
+            .logo
+                &::before
+                    display: none
+    .banner
+        &_ourWorks
+            .banner__img-2
+                top: 97%
+            .container
+                &::after
+                    display: none
+                .slider
+                    &::after
+                        display: none
+                    .headline
+                        .headline__text
+                            flex-direction: column
+                            justify-content: flex-end
+                            align-items: flex-end
+                            padding: 0 1.4vw 27% 0
+                            .text							
+                                width: 100%
+                                max-width: 350px
+                                padding: 0 0 9% 0
+                                span
+                                    display: block
+                            .btn_header
+                                display: block
+                                width: 100%
+                                max-width: 350px
+                                padding: 0
+                                a
+                                    display: block
+                                    box-sizing: border-box
+                                    padding: 20px 0
+                                    margin: 0
+                        &__img
+                            padding-left: 5.8vw
+                            img
+                                max-width: 576px
+.portfolio
+    &_ourWorks
+        padding-bottom: 0
+        padding-top: 2%
+        .container
+            .portfolio-block
+                padding-top: 0
+                .filter_div
+                    ul
+                        .active
+                            &::before, &::after
+                                max-width: 140px
+                                left: calc(50% - 70px)
+                #portfolio_grid
+                    padding: 4% 0
+            .btn_portfolio
+                grid-template-columns: 1fr
+                .btn_more
+                    justify-self: center
+                    
+.work
+    &_ourWorks
+        #circle-line
+            width: 70%
+            margin-bottom: 36px
+.social
+    &_ourWorks
+        padding-bottom: 1.8%

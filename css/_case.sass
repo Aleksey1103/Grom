@@ -1,0 +1,298 @@
+header
+    .nav
+        &_case
+            margin-bottom: 18px
+            .logo
+                &::before
+                    display: none
+    .banner
+        &_case
+            .banner__img-2
+                top: 97%
+            .banner__img-4
+                left: calc(50vw + 610px)
+                top: 76%
+            .container
+                &::after
+                    display: none
+                .slider
+                    &::after
+                        display: none
+                    .headline
+                        grid-template-columns: 5fr 6fr
+                        .headline__text
+                            flex-direction: column
+                            justify-content: flex-end
+                            align-items: flex-start
+                            padding: 0 0 24.5% 13.5%
+                            .text
+                                position: relative
+                                width: 100%
+                                max-width: 100%
+                                padding: 0 0 10% 0
+                                font-size: 230%
+                                letter-spacing: 1.75px
+                                span
+                                    span
+                                        font-size: 98%
+                                        font-family: 'GothamProBold'
+                                        font-weight: 900
+                                &::after
+                                    content: ''
+                                    position: absolute
+                                    left: 0
+                                    bottom: 25px
+                                    width: 70px
+                                    height: 4px
+                                    background-color: #6170ca
+                            .additional-text
+                                max-width: 390px
+                                margin: 0
+                                font-family: 'GothamProLight'
+                                font-size: 17px
+                                line-height: 20px
+                        &__img
+                            padding-left: 15px
+                            img
+                                max-width: 576px
+    .btn_header
+        &_case
+            grid-template-columns: 1fr
+            padding-top: 16px
+
+.presentation
+    position: relative
+    margin-top: 2%
+    &__img
+        position: absolute
+        width: calc(50vw - 600px)
+        background-repeat: no-repeat
+        background-size: auto 100%
+        &_1
+            height: 210px
+            top: 5.8%
+            left: 0
+            background-image: url(../img/bg-elem-13.png)
+            background-position: 51% 0
+        &_2
+            height: 212px
+            top: 8.4%
+            right: 0
+            background-image: url(../img/bg-elem-2.png)
+            background-position: right 0
+        &_3
+            height: 315px
+            top: 23.9%
+            left: 0
+            background-image: url(../img/bg-elem-4.png)
+            background-position: left 0
+        &_4
+            height: 30px
+            top: 19.4%
+            right: 0
+            background-image: url(../img/bg-elem-3.png)
+            background-position: 72% 0
+        &_5
+            height: 130px
+            top: 38.9%
+            left: 0
+            background-image: url(../img/bg-elem-8.png)
+            background-position: -87px 0
+        &_6
+            height: 83px
+            top: 27.8%
+            right: 0
+            background-image: url(../img/bg-elem-8.png)
+            background-position: 80% 0
+        &_7
+            height: 260px
+            top: 57.8%
+            left: 0
+            background-image: url(../img/bg-elem-14.png)
+            background-position: -40px 0
+        &_8
+            height: 279px
+            top: 32.5%
+            right: 0
+            background-image: url(../img/bg-elem-5.png)
+            background-position: calc(100% + 43px) 0
+        &_9
+            height: 130px
+            top: 84.7%
+            left: 0
+            background-image: url(../img/bg-elem-8.png)
+            background-position: -87px 0
+        &_10
+            height: 309px
+            top: 66.5%
+            right: 0
+            background-image: url(../img/bg-elem-7.png)
+            background-position: right 0
+        &_11
+            height: 279px
+            top: 95.9%
+            right: 0
+            background-image: url(../img/bg-elem-5.png)
+            background-position: calc(100% + 43px) 0
+
+    .container
+        padding: 0
+        .presentation-grid
+            display: grid
+            grid-template-areas: 'a a' 'b b' 'c d' 'e e' 'f g' 'h h' 'i i'
+            grid-template-columns: 1fr 1fr
+            grid-template-rows: repeat(7, 600px)
+            box-sizing: border-box
+            border: 0.5px solid #000
+            &__item
+                position: relative
+                width: 100%
+                height: 100%
+                overflow: hidden
+                box-sizing: border-box
+                border: 0.5px solid #000
+                &:nth-child(1)
+                    grid-area: a
+                &:nth-child(2)
+                    grid-area: b
+                &:nth-child(3)
+                    grid-area: c
+                &:nth-child(4)
+                    grid-area: d
+                &:nth-child(5)
+                    grid-area: e
+                &:nth-child(6)
+                    grid-area: f
+                &:nth-child(7)
+                    grid-area: g
+                &:nth-child(8)
+                    grid-area: h
+                &:nth-child(9)
+                    grid-area: i
+                img
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%,-50%)
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+        .btn_presentation
+            display: grid
+            grid-template-columns: 1fr
+            margin: 5% auto
+            .btn_back
+                justify-self: center
+
+.other-projects
+    position: relative
+    &__img
+        position: absolute
+        width: calc(50vw - 600px)
+        height: 315px
+        top: 29.5%
+        left: 0
+        background-repeat: no-repeat
+        background-size: auto 100%
+        background-image: url(../img/bg-elem-4.png)
+        background-position: left 0
+
+    .container
+        padding: 0
+        &__h2
+            font-size: 230%
+            margin: 4.8% 0 5.4% 0
+        .projects-grid
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr
+            grid-gap: 40.5px
+            &__item
+                display: grid
+                grid-template-areas: 'a' 'b' 'c'
+                grid-template-columns: 1fr
+                grid-template-rows: max-content auto max-content
+                box-sizing: border-box
+                border: 0.5px solid #000
+            &__img
+                grid-area: a
+                position: relative
+                width: 373px
+                height: 258px
+                overflow: hidden
+                box-sizing: border-box
+                border: 0.5px solid #000
+                img
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    width: calc(100% - 1px)
+                    height: calc(100% - 1px)
+                    transform: translate(-50%,-50%)
+                    object-fit: cover
+            &__text
+                grid-area: b
+                box-sizing: border-box
+                border: 0.5px solid #000
+                .heading
+                    margin: 0
+                    padding: 30px 20px 18px 36px
+                    font-family: 'GothamProBold'
+                    font-size: 30px
+                    line-height: 36px
+                    a
+                        color: #000
+                .description
+                    margin: 0
+                    padding: 8px 20px 27px 36px
+                    font-family: 'GothamProLight'
+                    font-size: 18px
+                    line-height: 24px
+                    letter-spacing: 1.4px
+            &__link
+                grid-area: c
+                box-sizing: border-box
+                border: 0.5px solid #000
+                align-self: end
+                .link
+                    display: flex
+                    justify-content: space-between
+                    padding: 26px 20px 25px 36px
+                    transition: .3s
+                    .link-description
+                        display: block
+                        font-family: 'GothamProBold'
+                        font-size: 18px
+                        color: #000
+                    .link-arrow
+                        width: 38px
+                        height: 17px
+                    &:hover
+                        .link-description
+                            color: #6170CA
+                        svg
+                            polygon
+                                fill: #6170CA
+
+
+
+.work
+    &_case
+        #circle-line
+            width: 70%
+            margin-bottom: 36px
+            margin-top: 2.8%
+.social
+    &_case
+        position: relative
+        padding-bottom: 2.8%
+        .social__img
+            position: absolute
+            width: calc(50vw - 600px)
+            height: 309px
+            top: 40.5%
+            right: 0
+            background-repeat: no-repeat
+            background-size: auto 100%
+            background-image: url(../img/bg-elem-7.png)
+            background-position: right 0
+            z-index: -1
