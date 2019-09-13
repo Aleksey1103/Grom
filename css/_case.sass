@@ -15,7 +15,7 @@ header
             .container
                 &::after
                     display: none
-                .slider
+                .wrapper
                     &::after
                         display: none
                     .headline
@@ -138,37 +138,26 @@ header
     .container
         padding: 0
         .presentation-grid
-            display: grid
-            grid-template-areas: 'a a' 'b b' 'c d' 'e e' 'f g' 'h h' 'i i'
-            grid-template-columns: 1fr 1fr
-            grid-template-rows: repeat(7, 600px)
+            display: grid            
+            grid-template-columns: 1fr 1fr            
             box-sizing: border-box
             border: 0.5px solid #000
             &__item
                 position: relative
+                grid-column-start: span 2
                 width: 100%
-                height: 100%
+                height: 600px
                 overflow: hidden
                 box-sizing: border-box
-                border: 0.5px solid #000
-                &:nth-child(1)
-                    grid-area: a
-                &:nth-child(2)
-                    grid-area: b
+                border: 0.5px solid #000                
                 &:nth-child(3)
-                    grid-area: c
+                    grid-column-start: span 1                   
                 &:nth-child(4)
-                    grid-area: d
-                &:nth-child(5)
-                    grid-area: e
+                    grid-column-start: span 1                   
                 &:nth-child(6)
-                    grid-area: f
+                    grid-column-start: span 1                    
                 &:nth-child(7)
-                    grid-area: g
-                &:nth-child(8)
-                    grid-area: h
-                &:nth-child(9)
-                    grid-area: i
+                    grid-column-start: span 1                   
                 img
                     position: absolute
                     top: 50%

@@ -49,7 +49,7 @@
 				right: 8%
 			&_case
 				.container
-					.slider
+					.slider, .wrapper
 						.headline
 							.headline__img
 								max-width: 526px
@@ -109,7 +109,7 @@
 					right: 3%
 			&_case
 				.container
-					.slider
+					.slider, .wrapper
 						.headline
 							.headline__img
 								max-width: 450px
@@ -161,7 +161,7 @@
 				&::after
 					max-width: 952px
 					left: 56px
-			.slider
+			.slider, .wrapper
 				.headline
 					&__text
 						.text
@@ -225,7 +225,7 @@
 					max-width: 830px
 					height: 354px
 					left: 39px
-				.slider
+				.slider, .wrapper
 					.headline
 						&__text
 							.text
@@ -240,7 +240,7 @@
 				display: none
 			&_ourWorks
 				.container
-					.slider
+					.slider, .wrapper
 						.headline
 							.headline__text
 								justify-content: center
@@ -273,7 +273,8 @@
 			display: none
 		.container
 			.presentation-grid
-				grid-template-rows: repeat(7, 500px)
+				&__item
+					height: 500px
 
 	.other-projects
 		&__img
@@ -384,7 +385,7 @@
 	header
 		.banner
 			.container
-				.slider
+				.slider, .wrapper
 					.headline
 						grid-template-columns: 3fr 4fr
 						.headline__text
@@ -398,14 +399,14 @@
 					height: 335px
 			&_ourWorks
 				.container
-					.slider
+					.slider, .wrapper
 						.headline
 							.headline__text
 								.text
 									padding: 0 0 9% 0
 			&_case
 				.container
-					.slider
+					.slider, .wrapper
 						.headline
 							grid-template-columns: 5fr 6fr
 							.headline__text
@@ -429,7 +430,7 @@
 			grid-template-columns: calc((100vw - 1000px)/2 +  160px) auto calc((100vw - 1000px)/2 + 332px)
 		.banner
 			.container
-				.slider
+				.slider, .wrapper
 					.headline
 						.headline__text
 							.text
@@ -444,14 +445,14 @@
 
 			&_ourWorks
 				.container
-					.slider
+					.slider, .wrapper
 						.headline
 							.headline__text
 								.text
 									padding: 0 0 9% 0
 			&_case
 				.container
-					.slider
+					.slider, .wrapper
 						.headline
 							.headline__text
 								.text
@@ -471,7 +472,8 @@
 	.presentation
 		.container
 			.presentation-grid
-				grid-template-rows: repeat(7, 485px)
+				&__item
+					height: 485px
 
 	.other-projects
 		.container
@@ -503,7 +505,7 @@
 
 		.banner
 			.container
-				.slider
+				.slider, .wrapper
 					.headline
 						.headline__text
 							.text
@@ -512,14 +514,14 @@
 					max-width: 791px
 			&_ourWorks
 				.container
-					.slider
+					.slider, .wrapper
 						.headline
 							.headline__text
 								.text
 									padding: 0 0 9% 0
 			&_case
 				.container
-					.slider
+					.slider, .wrapper
 						.headline
 							.headline__text
 								padding: 0 0 0 20px
@@ -530,7 +532,8 @@
 	.presentation
 		.container
 			.presentation-grid
-				grid-template-rows: repeat(7, 460px)
+				&__item
+					height: 460px
 
 	.other-projects
 		.container
@@ -658,7 +661,7 @@
 
 		.banner
 			.container
-				.slider
+				.slider, .wrapper
 					.headline
 						.headline__text
 							.text
@@ -668,14 +671,14 @@
 					left: calc(200px - 155px *0.71)
 			&_ourWorks
 				.container
-					.slider
+					.slider, .wrapper
 						.headline
 							.headline__text
 								.text
 									padding: 0 0 9% 0
 			&_case
 				.container
-					.slider
+					.slider, .wrapper
 						.headline
 							.headline__text
 								.text
@@ -725,7 +728,7 @@
 					margin-right: 30px
 		.banner
 			.container
-				.slider
+				.slider, .wrapper
 					.headline
 						grid-template-columns: 8fr 11fr
 						.headline__text
@@ -738,7 +741,7 @@
 					left: calc(20px + 0.29*155px)
 			&_ourWorks
 				.container
-					.slider
+					.slider, .wrapper
 						.headline
 							.headline__text
 								padding-left: 30px
@@ -746,7 +749,7 @@
 									padding: 0 0 9% 0
 			&_case
 				.container
-					.slider
+					.slider, .wrapper
 						.headline
 							.headline__text
 								padding-left: 20px
@@ -758,7 +761,8 @@
 	.presentation
 		.container
 			.presentation-grid
-				grid-template-rows: repeat(7, 368px)
+				&__item
+					height: 368px
 
 	.other-projects
 		.container
@@ -931,7 +935,7 @@
 					height: 25px
 		.banner
 			.container
-				.slider
+				.slider, .wrapper
 					.headline
 						grid-template-columns: 1fr
 						grid-template-rows: 70% 30%
@@ -948,7 +952,7 @@
 
 			&_ourWorks
 				.container
-					.slider
+					.slider, .wrapper
 						.headline
 							grid-template-rows: auto auto
 							.headline__text
@@ -962,7 +966,7 @@
 										display: inline
 			&_case
 				.container
-					.slider
+					.slider, .wrapper
 						.headline
 							grid-template-rows: auto auto
 							.headline__text
@@ -987,7 +991,8 @@
 	.presentation
 		.container
 			.presentation-grid
-				grid-template-rows: repeat(7, 273px)
+				&__item
+					height: 273px
 
 	.other-projects
 		.container
@@ -1229,7 +1234,8 @@
 	.presentation
 		.container
 			.presentation-grid
-				grid-template-rows: repeat(7, 263px)
+				&__item
+					height: 263px
 
 	.footer-contact-block
 		grid-template-columns: 1fr
@@ -1263,8 +1269,8 @@
 	.presentation
 		.container
 			.presentation-grid
-				grid-template-columns: repeat(2, calc(50vw - 25px))
-				grid-template-rows: repeat(7, calc(50vw - 25px))
+				&__item
+					height: calc(50vw - 25px)
 
 	.portfolio
 		.portfolio-block
@@ -1287,7 +1293,7 @@
 	header
 		.banner
 			.container
-				.slider
+				.slider, .wrapper
 					.headline
 						.headline__text,
 						.headline__text_2,
@@ -1305,14 +1311,14 @@
 							letter-spacing: -1px
 			&_ourWorks
 				.container
-					.slider
+					.slider, .wrapper
 						.headline
 							padding-bottom: 20px
 							.headline__text
 								max-width: 250px
 			&_case
 				.container
-					.slider
+					.slider, .wrapper
 						.headline
 							padding-bottom: 0
 							.headline__text
@@ -1338,12 +1344,6 @@
 			&>span
 				font-family: GothamProMedium
 				font-weight: normal
-
-	.presentation
-		.container
-			.presentation-grid
-				grid-template-columns: repeat(2, calc(50vw - 25px))
-				grid-template-rows: repeat(7, calc(50vw - 25px))
 
 	.other-projects
 		.container
@@ -1458,7 +1458,7 @@
 	header
 		.banner
 			.container
-				.slider
+				.slider, .wrapper
 					.headline
 						.headline__text
 							justify-self: start
@@ -1468,7 +1468,7 @@
 								letter-spacing: -1px
 			&_ourWorks
 				.container
-					.slider
+					.slider, .wrapper
 						.headline
 							.headline__text
 								justify-self: center
@@ -1476,7 +1476,7 @@
 									padding-left: 0
 			&_case
 				.container
-					.slider
+					.slider, .wrapper
 						.headline
 							.headline__text
 								.text
@@ -1489,12 +1489,6 @@
 									font-size: 16px
 
 	.presentation
-		.container
-			.presentation-grid
-				grid-template-areas: 'a' 'b' 'c' 'd' 'e' 'f' 'g' 'h' 'i'
-				grid-template-columns: calc(100vw - 50px)
-				grid-template-rows: repeat(9, calc(50vw - 25px))
-
 		.btn_presentation
 			min-width: 260px
 			margin: 10% auto !important
